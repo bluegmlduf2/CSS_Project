@@ -1,0 +1,53 @@
+#banner {
+    background: #0E3C84;
+    border: 1px solid red;
+}
+
+#banner>div {
+    /*mainContent Widtg Size 1200px*/
+    width: 1200px;
+    height: 160px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    /*기준점*/
+    position: relative;
+    border: 1px solid green;
+}
+
+.close>label {
+    color: #eeeeee;
+    font-size: 12px;
+}
+
+.control>a {
+    margin-left: 12px;
+}
+
+.prev,
+.next,
+.control,
+.close {
+    /*참고점 : #banner > div*/
+    position: absolute;
+}
+
+.prev {
+    top: 42px;
+    left: 0px;
+}
+
+.next {
+    top: 42px;
+    right: 0px;
+}
+
+.control {
+    top: 135px;
+    left: 0px;
+}
+
+.close {
+    top: 135px;
+    right: 0px;
+}
