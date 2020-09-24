@@ -23,7 +23,7 @@ time, mark, audio, video {
     border:0;
     outline:0;
     font-size:100%;
-    vertical-align:baseline;
+    vertical-align:middle; /*baseline -> middle 변경. 인라인수평*/
     background:transparent;
 }
 

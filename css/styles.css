@@ -3,6 +3,10 @@
     border: 1px solid red;
 }
 
+/* 
+선택자1 > 선택자2 
+선택자 2까지만 선택
+*/
 #banner>div {
     /*mainContent Widtg Size 1200px*/
     width: 1200px;
@@ -21,6 +25,8 @@
 }
 
 .control>a {
+    /*인라인 태그 사이에 공백제거 font-size:0px */
+    font-size: 0px;
     margin-left: 12px;
 }
 
