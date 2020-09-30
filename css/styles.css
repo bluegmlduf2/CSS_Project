@@ -75,6 +75,7 @@
 #header{
     background: #FFFFFF;
     border: 1px solid red;
+    height: 99px;
 }
 
 #header>div{
@@ -148,4 +149,78 @@ padding:0 20px 0 0;
     width:64px;
     height: 40px;
     text-indent: 9px; /*왼쪽 들여쓰기*/
+}
+/*************************************************************
+                            비주얼
+*************************************************************/
+#visual{
+    background: url(../img/images/bg_visual.jpg)no-repeat center;
+    border: 1px solid green;
+}
+
+#visual>div{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+#visual #copy{
+    padding:85px 0 0 0
+}
+
+#visual #copy > div{
+    float: left;
+    width: 33%;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
+
+#visual #copy .txt1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 150px 0 0 0;
+}
+#visual #copy .txt1 >div{
+    /* color: #FFFFFF; */
+    font-size: 33px;
+}
+#visual #copy .txt1 >img{
+    /* color: #FFFFFF; */
+    display: inline-block;
+    padding: 0 0 10px 0;
+    margin: 0 10px;
+}
+
+#visual #copy .txt2 {
+    background: url('../img/images/bg_circle.png')no-repeat center;
+    width: 344px;
+    height: 264px;
+    font-size: 18px;
+    font-family: "RussellSquare";
+    padding: 80px 0 0 0; /*height(264)+padding(80)=344px. 패딩은 더하고 높이는 줄여서 문자열을 가운데로 맞춤*/
+    margin:0 0 0 55px;
+}
+
+#visual #copy .txt2 >div{
+    /* color: #FFFFFF; */
+    font-size: 135px;
+    padding: 30px 0 0 0;
+}
+#visual #copy .txt3 {
+    float: right; /*다른 div는 왼쪽에 붙임.그러나 이 마지막 div는 오른쪽으로*/
+    font-size: 40px;
+    font-family: "RussellSquare";
+    padding: 140px 0 0 0;
+}
+
+#visual #copy .txt3 >div{
+    /* color: #FFFFFF; */
+    font-size: 20px;
+}
+
+#visual #copy .txt3 strong{
+    position: relative;
+    top:-2.5px;
+    /* color: #FFFFFF; */
+    padding:-4px 0 0 0;
 }
