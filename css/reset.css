@@ -42,8 +42,8 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
-nav ul {
-    list-style:none;
+ul {
+    list-style:none;/* li의 블릿제거 */
 }
 
 blockquote, q {

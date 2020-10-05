@@ -264,11 +264,75 @@ padding:0 20px 0 0;
 #visual #bottom #event{
     /* float은 해당 요소에 직접 적용 (자식x) */
     float: left;
-    width: 980px;
+    width: 771px;
     height: 100px;
     background: rgba(0,0,0,0.3);
+    padding: 0 80px;
+    position: relative;
+}
+
+#visual #bottom #event ul{
+    padding: 26px;/*아래의 a태그를 중간으로 수직정렬*/
+}
+
+#visual #bottom #event li{
+    padding-left: 18px;
+    background: url(../img/images/bu_circle.png)no-repeat center 15px;
+}
+
+#visual #bottom #event li a{
+    color:#FFFFFF;
+    font-size: 14px;
+    float: left;/*a태그들끼리 50%씩 차지하게 함*/
+    width: 50%;
+    line-height: 22px;
+}
+
+#visual #bottom #event div {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    background: url(../img/images/bg_line.gif)no-repeat center 25px;
+}
+#visual #bottom #event div a{
+ display: block;
+ margin: 0 0 16px;
 }
 
 #visual #bottom #weather{
     float: right;
+    background: #23b963;
+    height: 80px;
+    width: 103px;
+    padding:20px 33px 0 33px;/*여기에 <> 화살표를 줄거임*/
+    position: relative;
+}
+
+
+#visual #bottom #weather > a{
+    position: absolute;
+    top: 50%;
+}
+#visual #bottom #weather div{
+    padding:0 0 0 20px;
+    position: relative;
+}
+
+#visual #bottom #weather div img{
+    position: absolute;
+    left:0px;
+}
+
+#visual #bottom #weather h3{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+#visual #bottom #weather >a.left{
+    left: 10px;
+}
+
+#visual #bottom #weather >a.right{
+    right: 10px;
 }
