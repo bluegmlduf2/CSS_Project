@@ -314,13 +314,20 @@ padding:0 20px 0 0;
     top: 50%;
 }
 #visual #bottom #weather div{
-    padding:0 0 0 20px;
+    padding:0 0 0 55px;
     position: relative;
+    text-align: center;
+    font-size: 14px;
+}
+#visual #bottom #weather span{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #visual #bottom #weather div img{
     position: absolute;
-    left:0px;
+    top:15px;
+    left:10px;
 }
 
 #visual #bottom #weather h3{
