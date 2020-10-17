@@ -2,9 +2,10 @@
                             공통
 *************************************************************/
 /*웹표준을 위해서 작성한 h2를 숨김*/
-.hide{
-    position: absolute;/*현재 태그의 속성을 position: absolute;로 설정. 부모에 relative가 없을 경우 브라우저를 기준으로 절대적으로 이동함.*/
-    left:-3000%;
+.hide {
+    position: absolute;
+    /*현재 태그의 속성을 position: absolute;로 설정. 부모에 relative가 없을 경우 브라우저를 기준으로 절대적으로 이동함.*/
+    left: -3000%;
 }
 
 /*************************************************************
@@ -24,10 +25,12 @@
     /*mainContent Widtg Size 1200px*/
     width: 1200px;
     height: 160px;
-    margin: 0 auto; /*div안에 1200px짜리 div가 있는데 이를 가운데 정렬할떄 margin:0 auto를 사용한다*/
+    margin: 0 auto;
+    /*div안에 1200px짜리 div가 있는데 이를 가운데 정렬할떄 margin:0 auto를 사용한다*/
     text-align: center;
     vertical-align: middle;
-    position: relative;/*기준점*/
+    position: relative;
+    /*기준점*/
     border: 1px solid green;
 }
 
@@ -37,7 +40,8 @@
 }
 
 .control>a {
-    font-size: 0px;/*인라인 태그 사이에 공백제거 font-size:0px */
+    font-size: 0px;
+    /*인라인 태그 사이에 공백제거 font-size:0px */
     margin-left: 12px;
 }
 
@@ -45,7 +49,8 @@
 .next,
 .control,
 .close {
-    position: absolute;/*참고점 : #banner > div*/
+    position: absolute;
+    /*참고점 : #banner > div*/
 }
 
 .prev {
@@ -72,103 +77,121 @@
 /*************************************************************
                             헤더
 *************************************************************/
-#header{
+#header {
     background: #FFFFFF;
     border: 1px solid red;
     height: 99px;
 }
 
-#header>div{
+#header>div {
     width: 1200px;
     margin: 0 auto;
     border: 1px solid red;
 }
 
-#header>div>h1{
-padding:0 20px 0 0;
+#header>div>h1 {
+    padding: 0 20px 0 0;
 }
 
 
-#header>div>*{
-    float: left;/*div 첫번째 자식들을 왼쪽으로 정렬한다.그 과정에서 속성을 적용을 무시한다. (block속성을 정렬할때)*/
+#header>div>* {
+    float: left;
+    /*div 첫번째 자식들을 왼쪽으로 정렬한다.그 과정에서 속성을 적용을 무시한다. (block속성을 정렬할때)*/
     /* border: 1px solid blue; 테스트용->있으면 화면축소시 화면이 깨짐*/
 }
 
-#header #lnb >li{
+#header #lnb>li {
     float: left;
-    display: block; /*리스트의 목록표시가 사라진다. 원래는 list-style: none;을 사용한다*/
-    height:99px;/*부모 block태그에서 높이height를 설정해주지 않으면, 부모태그의 높이는 자식의 높이를 따른다. 그러므로 99px설정*/
-    line-height: 99px; /*li태그안에 들어간 인라인태그의 높이를 설정해줌 => 인라인의 수직정렬*/
-    padding:0 16px;
-    
+    display: block;
+    /*리스트의 목록표시가 사라진다. 원래는 list-style: none;을 사용한다*/
+    height: 99px;
+    /*부모 block태그에서 높이height를 설정해주지 않으면, 부모태그의 높이는 자식의 높이를 따른다. 그러므로 99px설정*/
+    line-height: 99px;
+    /*li태그안에 들어간 인라인태그의 높이를 설정해줌 => 인라인의 수직정렬*/
+    padding: 0 16px;
+
 }
 
-#header #lnb >li a{
+#header #lnb>li a {
     font-size: 16px;
     font-weight: bold;
     color: #333;
-    display: block;/*1.밑줄을 바닥에 붙이기 위해서 사용. 2.사용자가 클릭시 영역이 클릭됨으로 수월*/
-}
-#header #lnb >li a:hover{
-    height:95px; /*총높이 99픽셀에서 border의 4px을 제외한다.일시적으로*/
-    border-bottom: 4px solid #1764dc;
-    color:#3c91f3;
-    background: url(../img/images/bg_lnb.gif) no-repeat center 88px;/*position x값:중앙 y값:42*/
+    display: block;
+    /*1.밑줄을 바닥에 붙이기 위해서 사용. 2.사용자가 클릭시 영역이 클릭됨으로 수월*/
 }
 
-#header>div>div>*{
+#header #lnb>li a:hover {
+    height: 95px;
+    /*총높이 99픽셀에서 border의 4px을 제외한다.일시적으로*/
+    border-bottom: 4px solid #1764dc;
+    color: #3c91f3;
+    background: url(../img/images/bg_lnb.gif) no-repeat center 88px;
+    /*position x값:중앙 y값:42*/
+}
+
+#header>div>div>* {
     float: left;
 }
-#header>div>p{
+
+#header>div>p {
     line-height: 99px;
-    height:99px;
+    height: 99px;
     font-size: 22px;
     font-weight: bold;
     color: #0E3C84;
 }
-#header>div>p>span{
+
+#header>div>p>span {
     color: #1764dc;
-    position: relative;/*relative : 현재위치에서 이동함. absolute : 부모 relative가 없으면 프라우저 기준으로 이동*/
-    top:-3px;
+    position: relative;
+    /*relative : 현재위치에서 이동함. absolute : 부모 relative가 없으면 프라우저 기준으로 이동*/
+    top: -3px;
 }
 
-#header>div>div{
-    padding:30px 0 0 6px;
+#header>div>div {
+    padding: 30px 0 0 6px;
     /* line-height: 99px;
     height:99px; */
-    font-size: 0;/*자식 a태그의 간격을 제거*/
+    font-size: 0;
+    /*자식 a태그의 간격을 제거*/
 }
-#header #pop_btn{
+
+#header #pop_btn {
     /*인라인의 속성*/
     font-size: 11px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     line-height: 38px;
     /*블록의 설정*/
-    display: inline-block;/*a태그의 높이를 주고 색을 주기 위해서*/
-    background: #2cc06b url(../img/images/bu_arrow_down.gif)no-repeat 50px center;/*background 순서 color→image→repeat→position(왼쪽상단기준)(x값:50px,y값:center)*/
-    width:64px;
+    display: inline-block;
+    /*a태그의 높이를 주고 색을 주기 위해서*/
+    background: #2cc06b url(../img/images/bu_arrow_down.gif)no-repeat 50px center;
+    /*background 순서 color→image→repeat→position(왼쪽상단기준)(x값:50px,y값:center)*/
+    width: 64px;
     height: 40px;
-    text-indent: 9px; /*왼쪽 들여쓰기*/
+    text-indent: 9px;
+    /*왼쪽 들여쓰기*/
 }
+
 /*************************************************************
                             비주얼
 *************************************************************/
-#visual{
+#visual {
     background: url(../img/images/bg_visual.jpg)no-repeat center;
     border: 1px solid green;
 }
 
-#visual>div{
+#visual>div {
     width: 1200px;
     margin: 0 auto;
     border: 1px solid red;
 }
-#visual #copy{
+
+#visual #copy {
     margin: 55px 0 0 0;
     /* padding:30px 0 0 0 */
 }
 
-#visual #copy > div{
+#visual #copy>div {
     /* float는 해당요소에 직접적용 (자식이 아니라) */
     float: left;
     width: 33%;
@@ -182,11 +205,13 @@ padding:0 20px 0 0;
     font-weight: bold;
     padding: 150px 0 0 0;
 }
-#visual #copy .txt1 >div{
+
+#visual #copy .txt1>div {
     /* color: #FFFFFF; */
     font-size: 33px;
 }
-#visual #copy .txt1 >img{
+
+#visual #copy .txt1>img {
     /* color: #FFFFFF; */
     display: inline-block;
     padding: 0 0 10px 0;
@@ -199,50 +224,53 @@ padding:0 20px 0 0;
     height: 264px;
     font-size: 18px;
     font-family: "RussellSquare";
-    padding: 80px 0 0 0; /*height(264)+padding(80)=344px. 패딩은 더하고 높이는 줄여서 문자열을 가운데로 맞춤*/
-    margin:0 0 0 55px;
+    padding: 80px 0 0 0;
+    /*height(264)+padding(80)=344px. 패딩은 더하고 높이는 줄여서 문자열을 가운데로 맞춤*/
+    margin: 0 0 0 55px;
 }
 
-#visual #copy .txt2 >div{
+#visual #copy .txt2>div {
     /* color: #FFFFFF; */
     font-size: 135px;
     padding: 30px 0 0 0;
 }
+
 #visual #copy .txt3 {
-    float: right; /*다른 div는 왼쪽에 붙임.그러나 이 마지막 div는 오른쪽으로*/
+    float: right;
+    /*다른 div는 왼쪽에 붙임.그러나 이 마지막 div는 오른쪽으로*/
     font-size: 40px;
     font-family: "RussellSquare";
     padding: 140px 0 0 0;
 }
 
-#visual #copy .txt3 >div{
+#visual #copy .txt3>div {
     /* color: #FFFFFF; */
     font-size: 20px;
 }
 
-#visual #copy .txt3 strong{
+#visual #copy .txt3 strong {
     position: relative;
-    top:-2.5px;
+    top: -2.5px;
     /* color: #FFFFFF; */
-    padding:-4px 0 0 0;
+    padding: -4px 0 0 0;
 }
 
-#visual #paging{
+#visual #paging {
     text-align: center;
     font-size: 0px;
     margin: 15px 0 0 50px;
 }
 
-#visual #paging >a{
+#visual #paging>a {
     display: inline-block;
 }
 
-#visual #paging li{
+#visual #paging li {
     display: inline-block;
     margin: 0 5px;
 }
 
-#visual #paging > div{
+#visual #paging>div {
     margin: 15px 0 0 0;
 }
 
@@ -250,40 +278,42 @@ padding:0 20px 0 0;
     color: #FFFFFF;
 }
 
-#visual #bottom h2{
+#visual #bottom h2 {
     /* padding + height = 100px */
     background: #f13009;
     height: 67px;
     width: 100px;
     text-align: center;
     font-size: 18px;
-    padding:33px 0 0 0;
+    padding: 33px 0 0 0;
     float: left;
 }
 
-#visual #bottom #event{
+#visual #bottom #event {
     /* float은 해당 요소에 직접 적용 (자식x) */
     float: left;
     width: 771px;
     height: 100px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     padding: 0 80px;
     position: relative;
 }
 
-#visual #bottom #event ul{
-    padding: 26px;/*아래의 a태그를 중간으로 수직정렬*/
+#visual #bottom #event ul {
+    padding: 26px;
+    /*아래의 a태그를 중간으로 수직정렬*/
 }
 
-#visual #bottom #event li{
+#visual #bottom #event li {
     padding-left: 18px;
     background: url(../img/images/bu_circle.png)no-repeat center 15px;
 }
 
-#visual #bottom #event li a{
-    color:#FFFFFF;
+#visual #bottom #event li a {
+    color: #FFFFFF;
     font-size: 14px;
-    float: left;/*a태그들끼리 50%씩 차지하게 함*/
+    float: left;
+    /*a태그들끼리 50%씩 차지하게 함*/
     width: 50%;
     line-height: 22px;
 }
@@ -294,52 +324,146 @@ padding:0 20px 0 0;
     left: 28px;
     background: url(../img/images/bg_line.gif)no-repeat center 25px;
 }
-#visual #bottom #event div a{
- display: block;
- margin: 0 0 16px;
+
+#visual #bottom #event div a {
+    display: block;
+    margin: 0 0 16px;
 }
 
-#visual #bottom #weather{
+#visual #bottom #weather {
     float: right;
     background: #23b963;
     height: 80px;
     width: 103px;
-    padding:20px 33px 0 33px;/*여기에 <> 화살표를 줄거임*/
+    padding: 20px 33px 0 33px;
+    /*여기에 <> 화살표를 줄거임*/
     position: relative;
 }
 
 
-#visual #bottom #weather > a{
+#visual #bottom #weather>a {
     position: absolute;
     top: 50%;
 }
-#visual #bottom #weather div{
-    padding:0 0 0 55px;
+
+#visual #bottom #weather div {
+    padding: 0 0 0 55px;
     position: relative;
     text-align: center;
     font-size: 14px;
 }
-#visual #bottom #weather span{
+
+#visual #bottom #weather span {
     font-size: 20px;
     font-weight: bold;
 }
 
-#visual #bottom #weather div img{
+#visual #bottom #weather div img {
     position: absolute;
-    top:15px;
-    left:10px;
+    top: 15px;
+    left: 10px;
 }
 
-#visual #bottom #weather h3{
+#visual #bottom #weather h3 {
     text-align: center;
     color: #FFFFFF;
     font-size: 18px;
 }
 
-#visual #bottom #weather >a.left{
+#visual #bottom #weather>a.left {
     left: 10px;
 }
 
-#visual #bottom #weather >a.right{
+#visual #bottom #weather>a.right {
     right: 10px;
+}
+
+/*************************************************************
+                            교통상황
+*************************************************************/
+#traffic {
+    background: url(../img/images/bg_traffic.jpg)no-repeat center top;
+}
+#traffic>div{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid red;
+}
+/* >자식 (공백)자손 +형제(형) */
+#traffic>div>h2{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 38px;
+    padding:70px 0 0 0;
+}
+
+#traffic>div #speed{
+    background: url(../img/images/bg_circle2.png)no-repeat center top;
+    width: 250px;
+    height: 230px;
+    margin:35px auto 145px; /*margin 0 auto 는 해당 블록요소가 해당행에서 가운데로 올수있도록 한다 .*/
+    /* 아래의 자식text들에 대한 설정 */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#traffic>div #speed div#t1{
+    padding: 72px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 10px; /*자간*/
+    text-indent: 6px; /*왼쪽들여쓰기 공간*/
+}
+#traffic>div #speed div#t2{
+    font-size: 60px;
+    font-family: "RussellSquare";
+    line-height: 140%; /*행간*/
+    /*line-height는 %로 주는것이 맞다. px로 주면 화면을 키울떄 작아짐.
+    그리고 line-height는 위아래 leading을 포함한다*/
+}
+#traffic>div #speed div#t3{
+    padding: 5px 0 0 ;
+    font-size: 11px;
+}
+
+#traffic>div .left{
+    position: absolute;
+    top:246px;
+    left:50px;
+}
+
+#traffic>div .left li{
+    float: left;/*div의 수평정렬*/
+}
+
+/*a태그를 block으로 바꾼 경우*/
+#traffic>div .left a{
+    /* a태그를 block 요소로 바꿔준 후 넓이 조정필요 */
+    display: block;
+    width: 105px;
+    height: 47px;
+    text-align: center;
+    line-height: 47px;/*요소의 height와 line-height를 같은 값을 주면 텍스트의 수직정렬*/
+    color:#FFFFFF;
+    background: url(../img/images/bg_btn_tab.png)no-repeat left top;
+}
+
+/*스프라이트 기법:이미지의 포지션만 바꿈으로써 전환효과를 준다.*/
+/*a태그에 hover이벤트 혹은 on클래스가 있을때*/
+#traffic>div .left a:hover,
+#traffic>div .left .on
+{
+    background-position: right top;
+}
+
+#traffic>div .right{
+    position: absolute;
+    top:270px;
+    right:60px;
+}
+
+#traffic>div #graph{
+    margin: 0 auto;/*해당 div에 width를 줘야지 margin:0 auto가 적용된다.*/
+    width: 1054px;
 }
