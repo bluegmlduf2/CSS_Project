@@ -464,6 +464,67 @@
 }
 
 #traffic>div #graph{
+    /*해당 div에 넓이를 주고 마진에 자동을 주면 해당넓이의 div가 margin이 자동으로 잡힌다. */
     margin: 0 auto;/*해당 div에 width를 줘야지 margin:0 auto가 적용된다.*/
-    width: 1054px;
+    width: 1060px;
+}
+
+#traffic>div #graph>ul{
+    margin:50px 0 0;
+}
+
+#traffic>div #graph li:first-child{
+    background: none;
+    padding:0 0 0 0;
+}
+
+#traffic>div #graph li div:first-child{
+    right:-50px;
+}
+
+#traffic>div #graph li{
+    position: relative;
+    float: left;/*float를 쓰고 해당 float의 부모에 clear클래스(zoom:1;clear: both;) 적용해서 화면에서 벗어나지않도록 만듬*/
+    padding: 0 0 0 78px;
+    width: 48px;
+    background: url(../img/images/bg_arrow.png)no-repeat 23px center;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#traffic>div #graph li>div>img+span{
+    display: none;
+    position: absolute;
+    left: 29px;
+    top:-20px;
+    padding:8px;
+    background: #0e3c84;
+    font-size: 11px;
+    color:#FFFFFF;
+    width:215px;/*span에 inline-block없이 어떻게 width가 들어가는지 모르겠음.*/
+}
+/*img에 hover이벤트를 걸었음. 그리고 이벤트 발생시 span이 동작함*/
+#traffic>div #graph li>div>img:hover+span{
+    z-index: 1;
+    display: block;
+}
+
+#traffic>div #graph>ul>li>div{
+    position: absolute;
+    top: -197px;
+    right:3px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#traffic>div #graph>ul>li>div>strong{
+    display: block;
+    font-size: 25px;
+}
+
+#traffic>div>div.down{
+    padding: 37px 0 28px 0;
+    text-align: center; /*div>a태그에 text-align:center를 주어 가운데 정렬함.*/
 }
