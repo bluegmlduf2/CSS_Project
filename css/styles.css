@@ -528,3 +528,14 @@
     padding: 37px 0 28px 0;
     text-align: center; /*div>a태그에 text-align:center를 주어 가운데 정렬함.*/
 }
+/*************************************************************
+                            교통안전가이드
+*************************************************************/
+#safe{
+    background: url(../img/images/bg_visual2.gif)no-repeat center top;
+}
+#safe>div{
+    width: 1120px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
