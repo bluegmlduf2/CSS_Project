@@ -384,107 +384,118 @@
 #traffic {
     background: url(../img/images/bg_traffic.jpg)no-repeat center top;
 }
-#traffic>div{
+
+#traffic>div {
     width: 1200px;
     margin: 0 auto;
     position: relative;
     border: 1px solid red;
 }
+
 /* >자식 (공백)자손 +형제(형) */
-#traffic>div>h2{
+#traffic>div>h2 {
     text-align: center;
     color: #FFFFFF;
     font-size: 38px;
-    padding:70px 0 0 0;
+    padding: 70px 0 0 0;
 }
 
-#traffic>div #speed{
+#traffic>div #speed {
     background: url(../img/images/bg_circle2.png)no-repeat center top;
     width: 250px;
     height: 230px;
-    margin:35px auto 145px; /*margin 0 auto 는 해당 블록요소가 해당행에서 가운데로 올수있도록 한다 .*/
+    margin: 35px auto 145px;
+    /*margin 0 auto 는 해당 블록요소가 해당행에서 가운데로 올수있도록 한다 .*/
     /* 아래의 자식text들에 대한 설정 */
     color: #FFFFFF;
     text-align: center;
 }
 
-#traffic>div #speed div#t1{
+#traffic>div #speed div#t1 {
     padding: 72px 0 0 0;
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 10px; /*자간*/
-    text-indent: 6px; /*왼쪽들여쓰기 공간*/
+    letter-spacing: 10px;
+    /*자간*/
+    text-indent: 6px;
+    /*왼쪽들여쓰기 공간*/
 }
-#traffic>div #speed div#t2{
+
+#traffic>div #speed div#t2 {
     font-size: 60px;
     font-family: "RussellSquare";
-    line-height: 140%; /*행간*/
+    line-height: 140%;
+    /*행간*/
     /*line-height는 %로 주는것이 맞다. px로 주면 화면을 키울떄 작아짐.
     그리고 line-height는 위아래 leading을 포함한다*/
 }
-#traffic>div #speed div#t3{
-    padding: 5px 0 0 ;
+
+#traffic>div #speed div#t3 {
+    padding: 5px 0 0;
     font-size: 11px;
 }
 
-#traffic>div .left{
+#traffic>div .left {
     position: absolute;
-    top:246px;
-    left:50px;
+    top: 246px;
+    left: 50px;
 }
 
-#traffic>div .left li{
-    float: left;/*div의 수평정렬*/
+#traffic>div .left li {
+    float: left;
+    /*div의 수평정렬*/
 }
 
 /*a태그를 block으로 바꾼 경우*/
-#traffic>div .left a{
+#traffic>div .left a {
     /* a태그를 block 요소로 바꿔준 후 넓이 조정필요 */
     display: block;
     width: 105px;
     height: 47px;
     text-align: center;
-    line-height: 47px;/*요소의 height와 line-height를 같은 값을 주면 텍스트의 수직정렬*/
-    color:#FFFFFF;
+    line-height: 47px;
+    /*요소의 height와 line-height를 같은 값을 주면 텍스트의 수직정렬*/
+    color: #FFFFFF;
     background: url(../img/images/bg_btn_tab.png)no-repeat left top;
 }
 
 /*스프라이트 기법:이미지의 포지션만 바꿈으로써 전환효과를 준다.*/
 /*a태그에 hover이벤트 혹은 on클래스가 있을때*/
 #traffic>div .left a:hover,
-#traffic>div .left .on
-{
+#traffic>div .left .on {
     background-position: right top;
 }
 
-#traffic>div .right{
+#traffic>div .right {
     position: absolute;
-    top:270px;
-    right:60px;
+    top: 270px;
+    right: 60px;
 }
 
-#traffic>div #graph{
+#traffic>div #graph {
     /*해당 div에 넓이를 주고 마진에 자동을 주면 해당넓이의 div가 margin이 자동으로 잡힌다. */
-    margin: 0 auto;/*해당 div에 width를 줘야지 margin:0 auto가 적용된다.*/
+    margin: 0 auto;
+    /*해당 div에 width를 줘야지 margin:0 auto가 적용된다.*/
     width: 1060px;
 }
 
-#traffic>div #graph>ul{
-    margin:50px 0 0;
+#traffic>div #graph>ul {
+    margin: 50px 0 0;
 }
 
-#traffic>div #graph li:first-child{
+#traffic>div #graph li:first-child {
     background: none;
-    padding:0 0 0 0;
+    padding: 0 0 0 0;
 }
 
-#traffic>div #graph li div:first-child{
-    right:-50px;
+#traffic>div #graph li div:first-child {
+    right: -50px;
 }
 
-#traffic>div #graph li{
+#traffic>div #graph li {
     position: relative;
-    float: left;/*float를 쓰고 해당 float의 부모에 clear클래스(zoom:1;clear: both;) 적용해서 화면에서 벗어나지않도록 만듬*/
+    float: left;
+    /*float를 쓰고 해당 float의 부모에 clear클래스(zoom:1;clear: both;) 적용해서 화면에서 벗어나지않도록 만듬*/
     padding: 0 0 0 78px;
     width: 48px;
     background: url(../img/images/bg_arrow.png)no-repeat 23px center;
@@ -494,48 +505,118 @@
     font-weight: bold;
 }
 
-#traffic>div #graph li>div>img+span{
+#traffic>div #graph li>div>img+span {
     display: none;
     position: absolute;
     left: 29px;
-    top:-20px;
-    padding:8px;
+    top: -20px;
+    padding: 8px;
     background: #0e3c84;
     font-size: 11px;
-    color:#FFFFFF;
-    width:215px;/*span에 inline-block없이 어떻게 width가 들어가는지 모르겠음.*/
+    color: #FFFFFF;
+    width: 215px;
+    /*span에 inline-block없이 어떻게 width가 들어가는지 모르겠음.*/
 }
+
 /*img에 hover이벤트를 걸었음. 그리고 이벤트 발생시 span이 동작함*/
-#traffic>div #graph li>div>img:hover+span{
+#traffic>div #graph li>div>img:hover+span {
     z-index: 1;
     display: block;
 }
 
-#traffic>div #graph>ul>li>div{
+#traffic>div #graph>ul>li>div {
     position: absolute;
     top: -197px;
-    right:3px;
+    right: 3px;
     font-size: 12px;
     text-align: center;
 }
 
-#traffic>div #graph>ul>li>div>strong{
+#traffic>div #graph>ul>li>div>strong {
     display: block;
     font-size: 25px;
 }
 
-#traffic>div>div.down{
+#traffic>div>div.down {
     padding: 37px 0 28px 0;
-    text-align: center; /*div>a태그에 text-align:center를 주어 가운데 정렬함.*/
+    text-align: center;
+    /*div>a태그에 text-align:center를 주어 가운데 정렬함.*/
 }
+
 /*************************************************************
                             교통안전가이드
 *************************************************************/
-#safe{
+#safe {
     background: url(../img/images/bg_visual2.gif)no-repeat center top;
 }
-#safe>div{
+
+#safe>div {
     width: 1120px;
     margin: 0 auto;
     border: 1px solid red;
+}
+
+#safe>div h2 {
+    font-size: 38px;
+    color: #123977;
+    text-align: center;
+    padding: 72px 0 36px;
+
+}
+
+#safe .list {
+    border: 1px solid #ddd;
+}
+
+#safe .list li {
+    float: left;
+    width: 25%;
+    /*float왼쪽정렬,25%씩*/
+    border-left: 1px solid #ddd;
+    margin-left: -1px;
+    /*border왼쪽-1px로 볼더 겹치기(기법0)*/
+    text-align: center;
+    background-position: center 50px;/*li.bg1~bg4 이미지의 공통 설정(기법1)*/
+    background-repeat: no-repeat;/*li.bg1~bg4 이미지의 공통 설정(기법1)*/
+    position: relative;/*a태그에 position을 주어 li를 감싼다 (기법3)*/
+}
+
+#safe .list li h3 {
+    padding: 140px 0 16px;
+    /* h3의 위아래 여백 */
+    background: url(../img/bg_line2.gif)no-repeat center bottom;
+    font-size: 19px;
+    color: #333;
+}
+
+#safe .list li div {
+    padding: 19px 0 0;
+    height: 85px;
+    /*padding-bottom이 아니라 height를 주는 이유? 
+    padding-bottom을 사용 경우 div에 행이 추가되면 div가 무너진다*/
+    font-size: 13px;
+    color: #777;
+    line-height: 18px;
+}
+
+#safe .list li.bg1 {
+    background-image: url(../img/images/bg_ico_off1.png);/*background-image는 개별 이미지 추가(기법1)*/
+}
+#safe .list li.bg2 {
+    background-image: url(../img/images/bg_ico_off2.png);
+}
+#safe .list li.bg3 {
+    background-image: url(../img/images/bg_ico_off3.png);
+}
+#safe .list li.bg4 {
+    background-image: url(../img/images/bg_ico_off4.png);
+}
+
+#safe .list li a{
+    /*(기법3)position:absolute로 li를 감싼다. position:absolute;의 width:100% , height100%를 주면 상위 요소의 넓이를 따른다*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
