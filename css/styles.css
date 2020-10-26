@@ -648,9 +648,13 @@
 #safe .list li.bg4:hover {
     background-image: url(../img/images/bg_ico_on4.png);
 }
+#safe .news{
+    padding:40px 0 0 0;
+}
+
 #safe .news>div{
     position: relative;
-    /* float에 width를 넣어주지않으면 내부요소 넓이만큼 잡힌다. */
+    /* float에 width를 넣어주지않으면 내부요소 넓이만큼 잡힌다. 그러므로 넓이를 530px을 줌 */
     width:530px;
     float: right;
 }
@@ -663,9 +667,9 @@
     padding: 0 0 21px;
 }
 #safe .news li{
-    /* 요소는 위아래의 넓이를 1/2로 잡는것이 좋다. */
     padding:0 0 0 100px;
     position: relative;
+    text-align: center;
 }
 
 #safe .news li a{
@@ -675,6 +679,7 @@
     /* border-bottom을 적용하기 위해서 block으로 지정 */
     display: block;
     border-bottom: 1px solid #ececec;
+    text-align: left;
 }
 
 #safe .news li span{
@@ -682,7 +687,7 @@
     position: absolute;
     top:0;
     left: 0;
-    /* display의 block으로 설정하였으므로 height , width를 주었다. */
+    /* display의 block으로 설정하고 border-bottom을 주기위해 height , width를 주었다. */
     height: 74px;
     width: 70px;
     border-bottom: 1px solid #ececec;
@@ -695,8 +700,14 @@
     padding: 20px 0 0 0;
     font-size: 21px;
     color:#1e62cc;
-
 }
+
+#safe .news li img{
+    /*요소의 위치를 조정 할때 position: relative를 사용하는 경우는 상위 relative에 영향을 받지않기위함  */
+    position: relative;
+    top: -2px;
+}
+
 
 #safe .news >div p{
     position: absolute;
