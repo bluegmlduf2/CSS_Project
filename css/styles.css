@@ -619,4 +619,93 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 2;
+    /*글자를 안보이게하는 패턴은 몇가지가 있는데 그중에 하나가 color:transparent*/
+    color: transparent;
 }
+
+#safe .list li:hover{
+    background-color: #1660d4;
+}
+/*이벤트 주는법. 해당 li에 커서를 올렸을때 h3에 준다. hover을 h3에 주면안됨.*/
+#safe .list li:hover h3{
+    color:#FFFFFF;
+}
+
+#safe .list li:hover div{
+    color:#FFFFFF;
+}
+
+#safe .list li.bg1:hover {
+    background-image: url(../img/images/bg_ico_on1.png);/*background-image는 개별 이미지 추가(기법1)*/
+}
+#safe .list li.bg2:hover {
+    background-image: url(../img/images/bg_ico_on2.png);
+}
+#safe .list li.bg3:hover {
+    background-image: url(../img/images/bg_ico_on3.png);
+}
+#safe .list li.bg4:hover {
+    background-image: url(../img/images/bg_ico_on4.png);
+}
+#safe .news>div{
+    position: relative;
+    /* float에 width를 넣어주지않으면 내부요소 넓이만큼 잡힌다. */
+    width:530px;
+    float: right;
+}
+#safe .news>div:first-child{
+    float: left;
+}
+#safe .news h3{
+    font-size: 22px;
+    color: #333;
+    padding: 0 0 21px;
+}
+#safe .news li{
+    /* 요소는 위아래의 넓이를 1/2로 잡는것이 좋다. */
+    padding:0 0 0 100px;
+    position: relative;
+}
+
+#safe .news li a{
+    height: 74px;
+    /* 텍스트의 수평정렬은 height와 lign-height를 같은 높이를 준다. */
+    line-height: 74px;
+    /* border-bottom을 적용하기 위해서 block으로 지정 */
+    display: block;
+    border-bottom: 1px solid #ececec;
+}
+
+#safe .news li span{
+    display: block; 
+    position: absolute;
+    top:0;
+    left: 0;
+    /* display의 block으로 설정하였으므로 height , width를 주었다. */
+    height: 74px;
+    width: 70px;
+    border-bottom: 1px solid #ececec;
+    font-size: 13px;
+    color:#888;
+
+}
+#safe .news li span strong{
+    display: block;
+    padding: 20px 0 0 0;
+    font-size: 21px;
+    color:#1e62cc;
+
+}
+
+#safe .news >div p{
+    position: absolute;
+    top:5px;
+    right:0;
+}
+
+#safe .nextBtn{
+    text-align: center; 
+    padding:35px 0 20px;
+}
+
