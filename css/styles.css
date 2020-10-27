@@ -576,9 +576,12 @@
     margin-left: -1px;
     /*border왼쪽-1px로 볼더 겹치기(기법0)*/
     text-align: center;
-    background-position: center 50px;/*li.bg1~bg4 이미지의 공통 설정(기법1)*/
-    background-repeat: no-repeat;/*li.bg1~bg4 이미지의 공통 설정(기법1)*/
-    position: relative;/*a태그에 position을 주어 li를 감싼다 (기법3)*/
+    background-position: center 50px;
+    /*li.bg1~bg4 이미지의 공통 설정(기법1)*/
+    background-repeat: no-repeat;
+    /*li.bg1~bg4 이미지의 공통 설정(기법1)*/
+    position: relative;
+    /*a태그에 position을 주어 li를 감싼다 (기법3)*/
 }
 
 #safe .list li h3 {
@@ -600,19 +603,23 @@
 }
 
 #safe .list li.bg1 {
-    background-image: url(../img/images/bg_ico_off1.png);/*background-image는 개별 이미지 추가(기법1)*/
+    background-image: url(../img/images/bg_ico_off1.png);
+    /*background-image는 개별 이미지 추가(기법1)*/
 }
+
 #safe .list li.bg2 {
     background-image: url(../img/images/bg_ico_off2.png);
 }
+
 #safe .list li.bg3 {
     background-image: url(../img/images/bg_ico_off3.png);
 }
+
 #safe .list li.bg4 {
     background-image: url(../img/images/bg_ico_off4.png);
 }
 
-#safe .list li a{
+#safe .list li a {
     /*(기법3)position:absolute로 li를 감싼다. position:absolute;의 width:100% , height100%를 주면 상위 요소의 넓이를 따른다*/
     position: absolute;
     top: 0;
@@ -624,55 +631,64 @@
     color: transparent;
 }
 
-#safe .list li:hover{
+#safe .list li:hover {
     background-color: #1660d4;
 }
+
 /*이벤트 주는법. 해당 li에 커서를 올렸을때 h3에 준다. hover을 h3에 주면안됨.*/
-#safe .list li:hover h3{
-    color:#FFFFFF;
+#safe .list li:hover h3 {
+    color: #FFFFFF;
 }
 
-#safe .list li:hover div{
-    color:#FFFFFF;
+#safe .list li:hover div {
+    color: #FFFFFF;
 }
 
 #safe .list li.bg1:hover {
-    background-image: url(../img/images/bg_ico_on1.png);/*background-image는 개별 이미지 추가(기법1)*/
+    background-image: url(../img/images/bg_ico_on1.png);
+    /*background-image는 개별 이미지 추가(기법1)*/
 }
+
 #safe .list li.bg2:hover {
     background-image: url(../img/images/bg_ico_on2.png);
 }
+
 #safe .list li.bg3:hover {
     background-image: url(../img/images/bg_ico_on3.png);
 }
+
 #safe .list li.bg4:hover {
     background-image: url(../img/images/bg_ico_on4.png);
 }
-#safe .news{
-    padding:40px 0 0 0;
+
+#safe .news {
+    padding: 40px 0 0 0;
 }
 
-#safe .news>div{
+#safe .news>div {
     position: relative;
     /* float에 width를 넣어주지않으면 내부요소 넓이만큼 잡힌다. 그러므로 넓이를 530px을 줌 */
-    width:530px;
+    width: 530px;
     float: right;
 }
-#safe .news>div:first-child{
+
+#safe .news>div:first-child {
     float: left;
 }
-#safe .news h3{
+
+#safe .news h3 {
     font-size: 22px;
     color: #333;
     padding: 0 0 21px;
 }
-#safe .news li{
-    padding:0 0 0 100px;
+
+#safe .news li {
+    padding: 0 0 0 100px;
     position: relative;
     text-align: center;
 }
 
-#safe .news li a{
+#safe .news li a {
     height: 74px;
     /* 텍스트의 수평정렬은 height와 lign-height를 같은 높이를 준다. */
     line-height: 74px;
@@ -682,41 +698,124 @@
     text-align: left;
 }
 
-#safe .news li span{
-    display: block; 
+#safe .news li span {
+    display: block;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     /* display의 block으로 설정하고 border-bottom을 주기위해 height , width를 주었다. */
     height: 74px;
     width: 70px;
     border-bottom: 1px solid #ececec;
     font-size: 13px;
-    color:#888;
+    color: #888;
 
 }
-#safe .news li span strong{
+
+#safe .news li span strong {
     display: block;
     padding: 20px 0 0 0;
     font-size: 21px;
-    color:#1e62cc;
+    color: #1e62cc;
 }
 
-#safe .news li img{
+#safe .news li img {
     /*요소의 위치를 조정 할때 position: relative를 사용하는 경우는 상위 relative에 영향을 받지않기위함  */
     position: relative;
     top: -2px;
 }
 
 
-#safe .news >div p{
+#safe .news>div p {
     position: absolute;
-    top:5px;
-    right:0;
+    top: 5px;
+    right: 0;
 }
 
-#safe .nextBtn{
-    text-align: center; 
-    padding:35px 0 20px;
+#safe .nextBtn {
+    text-align: center;
+    padding: 35px 0 20px;
 }
 
+/*************************************************************
+                            제대로 즐기는 여행지
+*************************************************************/
+#trip {
+    background: url(../img/images/bg_visual2.jpg)no-repeat center top;
+}
+
+#trip>div {
+    width: 1120px;
+    margin: 0 auto;
+    border: 1px solid red;
+    position: relative;
+}
+
+#trip>div>h2 {
+    font-size: 38px;
+    color: #ab2246;
+    text-align: center;
+    padding: 72px 0 37px;
+}
+
+#trip>div>a {
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+#trip .white_box {
+    /* 박스투명도 */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 60px;
+}
+
+#trip .white_box>div {
+    float: left;
+}
+
+#trip .white_box>div>h3 {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 15px;
+}
+
+#trip .white_box>div>a {
+    position: relative;
+    display: block;
+}
+
+#trip .white_box>div>a>em,
+#trip .white_box>div>a>span {
+    position: absolute;
+}
+
+#trip .white_box>div>a>span{
+    display: none;
+    padding:21px 0 0;
+    width: 170px;
+    /* height가 있는 경우 padding의 높이를 뺴 주어야함. */
+    height: 57px;
+    background: url(../img/images/bg_over.png)no-repeat;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+    /* top,left로 가운데에 위치시키기 (기법1) 
+    : 이번에 이렇게 적용한 이유는 각각의 요소마다 가운데 정렬 시키기 위해서(클래스재사용을위해)*/
+    top: 50%;
+    left: 50%;
+    /* 50%씩 준 후, 해당요소의 넓이/2,높이/2로 -마진 적용 후 가운데 정렬을 시킨다. */
+    margin: -39px 0 0 -85px;
+}
+
+#trip .white_box>div>a:hover>span{
+    display: inline;
+}
+
+#trip .white_box>div>a>em{
+    left:20px;
+    bottom: 18px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
