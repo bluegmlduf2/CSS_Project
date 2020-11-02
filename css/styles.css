@@ -745,7 +745,7 @@
 }
 
 #trip>div {
-    width: 1120px;
+    width: 1200px;
     margin: 0 auto;
     border: 1px solid red;
     position: relative;
@@ -767,7 +767,7 @@
 #trip .white_box {
     /* 박스투명도 */
     background: rgba(255, 255, 255, 0.9);
-    padding: 30px 60px;
+    padding: 5px 60px 30px;
 }
 
 #trip .white_box>div {
@@ -777,7 +777,7 @@
 #trip .white_box>div>h3 {
     font-size: 20px;
     color: #333;
-    padding-bottom: 15px;
+    padding: 20px 0 15px;
 }
 
 #trip .white_box>div>a {
@@ -802,7 +802,7 @@
     text-align: center;
     line-height: 20px;
     /* top,left로 가운데에 위치시키기 (기법1) 
-    : 이번에 이렇게 적용한 이유는 각각의 요소마다 가운데 정렬 시키기 위해서(클래스재사용을위해)*/
+    : 이렇게 적용한 이유는 각각의 요소(trip .white_box>div>a>span)마다 이미지를 가운데 위치 시키기 위해서(css의중복사용방지)*/
     top: 50%;
     left: 50%;
     /* 50%씩 준 후, 해당요소의 넓이/2,높이/2로 -마진 적용 후 가운데 정렬을 시킨다. */
@@ -818,4 +818,42 @@
     bottom: 18px;
     font-size: 14px;
     color: #FFFFFF;
+}
+
+#trip .white_box>div>a:hover>em{
+    display: none;
+}
+
+#trip .white_box>div.mid{
+    padding: 0 60px;
+}
+
+#trip .white_box>div.mid>a>span{
+    left:255px;
+    top:290px;
+    margin: 0;
+    padding: 0;
+    width: 91px;
+    height: 31px;
+    line-height: 31px;
+    text-align: left;
+    text-indent: 17px;
+    background:url(../img/images/btn_more2.png);
+}
+
+#trip .white_box>div.mid>p{
+    font-size: 17px;
+    padding: 20px 0 13px;
+    color:#333;
+    font-weight: bold;
+}
+
+#trip .white_box>div.mid>div{
+    font-size: 13px;
+    color:#333;
+
+}
+#trip div.nextBtn{
+    text-align: center;
+    padding: 35px 0 20px;
 }

@@ -33,6 +33,9 @@ time, mark, audio, video {
     background:transparent;
 }
 
+/* font스타일 적용되어있는 태그들 스타일 초기화 */
+address,caption,cite,code,dfn,em,var {font-style:normal; font-weight:normal;}
+
 body {
     line-height:1;
 }
