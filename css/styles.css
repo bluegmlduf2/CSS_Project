@@ -963,3 +963,50 @@
 #sns>div .sns_box > div.sns2 a{
     background-color: #35b22c;
 }
+
+/*************************************************************
+                           FOOTER
+*************************************************************/
+#footer {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+    text-align: center;
+}
+
+#footer>a{
+    position: absolute;
+    right: 0px;
+}
+
+#footer>img{
+    padding: 42px 0 26px;
+}
+
+#footer ul.nav li{
+    /* li는 display속성인데 이를 inline으로 바꾼후 text-align: center;를 주고 가운데 정렬을 시킨다 */
+    display: inline;
+    padding: 0 15px;
+    position: relative;
+}
+
+#footer ul.nav li a{
+    font-size: 13.5px;
+    color: #333;
+}
+
+/* :before :after 은 가상요소를 추가해준다
+    content: "";는 필수사항이다.
+    해당 추가한 요소에 높이 14 넓이 1의 칸을 만들었다.
+*/
+#footer ul.nav li:after{
+    /* :before :after와 content:""는 같이 쓰인다 */
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 14px;
+    background-color: #b2b2b2;
+}
