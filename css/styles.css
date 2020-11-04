@@ -901,7 +901,7 @@
     height: 460px;
     /*padding말고 margin을 준 이유는 padding을 주면 요소가 늘어나서 배경흰색이 늘어남*/
     margin-left: 45px;
-    padding:40px 50px 0;
+    padding: 40px 50px 0;
 
 }
 
@@ -910,45 +910,48 @@
     margin: 0;
 }
 
-#sns>div .sns_box > div h3{
-    padding:0 0 20px;
+#sns>div .sns_box>div h3 {
+    padding: 0 0 20px;
     font-size: 21px;
     text-align: center;
 }
-#sns>div .sns_box > div.sns2 h3{
+
+#sns>div .sns_box>div.sns2 h3 {
     color: #3658a5;
 }
-#sns>div .sns_box > div.sns2 h3{
-    padding:0;
+
+#sns>div .sns_box>div.sns2 h3 {
+    padding: 0;
     color: #32900b;
 }
-#sns>div .sns_box > div.sns2 h3{
+
+#sns>div .sns_box>div.sns2 h3 {
     color: #3b9dea;
 }
 
-#sns>div .sns_box > div.sns2 p{
+#sns>div .sns_box>div.sns2 p {
     font-size: 14px;
-    color:#828281;
-    padding:9px 0 19px;
+    color: #828281;
+    padding: 9px 0 19px;
     text-align: center;
 }
 
-#sns>div .sns_box > div.sns2 img{
-    padding:15px 0 0 0;
-    border-bottom:1px solid #aaa ;
+#sns>div .sns_box>div.sns2 img {
+    padding: 15px 0 0 0;
+    border-bottom: 1px solid #aaa;
 }
 
-#sns>div .sns_box > div.sns2 h4 img{
+#sns>div .sns_box>div.sns2 h4 img {
     border: none;
-    padding:0 0 15px
+    padding: 0 0 15px
 }
 
-#sns>div .sns_box > div a{
+#sns>div .sns_box>div a {
     display: block;
     /* width는 block으로 꽉찬 가로 길이이므로 생략 */
     height: 43px;
     text-align: center;
-    color:#fff;
+    color: #fff;
     font-size: 12.5px;
     line-height: 43px;
     margin: 10px 0 0 0;
@@ -956,11 +959,11 @@
     background: url(../img/images/bg_arrow2.png)no-repeat 236px center;
 }
 
-#sns>div .sns_box > div.sns1 a{
+#sns>div .sns_box>div.sns1 a {
     background-color: #3b56ad;
 }
 
-#sns>div .sns_box > div.sns2 a{
+#sns>div .sns_box>div.sns2 a {
     background-color: #35b22c;
 }
 
@@ -975,23 +978,23 @@
     text-align: center;
 }
 
-#footer>a{
+#footer>a {
     position: absolute;
     right: 0px;
 }
 
-#footer>img{
+#footer>img {
     padding: 42px 0 26px;
 }
 
-#footer ul.nav li{
+#footer ul.nav li {
     /* li는 display속성인데 이를 inline으로 바꾼후 text-align: center;를 주고 가운데 정렬을 시킨다 */
     display: inline;
     padding: 0 15px;
     position: relative;
 }
 
-#footer ul.nav li a{
+#footer ul.nav li a {
     font-size: 13.5px;
     color: #333;
 }
@@ -1000,8 +1003,8 @@
     content: "";는 필수사항이다.
     해당 추가한 요소에 높이 14 넓이 1의 칸을 만들었다.
 */
-#footer ul.nav li:after{
-    /* :before :after와 content:""는 같이 쓰인다 */
+#footer ul.nav li:after {
+    /* :before와 , :after는  content:""와 같이 쓰인다 */
     content: "";
     position: absolute;
     left: 0;
@@ -1009,4 +1012,59 @@
     width: 1px;
     height: 14px;
     background-color: #b2b2b2;
+}
+
+#footer ul.nav li:first-child:after {
+    display: none;
+}
+
+#footer address {
+    font-size: 13.5px;
+    color: #666;
+    padding: 20px 0 38px;
+}
+
+
+#footer address em {
+    font-size: 12.5px;
+    color: #999;
+    display: block;
+    padding: 25px 0 0;
+}
+
+#footer ul.sns li {
+    display: inline-block;
+}
+
+#footer ul.sns li a {
+    overflow: hidden;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(../img/images/ico_footer_sns.gif)no-repeat;
+    color: transparent;
+}
+
+#footer ul.sns li.ico1 a {
+    background-position: 0 0;
+}
+
+#footer ul.sns li.ico2 a {
+    background-position: -43px 0;
+}
+
+#footer ul.sns li.ico3 a {
+    background-position: -86px 0;
+}
+
+#footer ul.sns li.ico1 a:hover {
+    background-position: 0 bottom;
+}
+
+#footer ul.sns li.ico2 a:hover {
+    background-position: -43px bottom;
+}
+
+#footer ul.sns li.ico3 a:hover {
+    background-position: -86px bottom;
 }
