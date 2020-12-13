@@ -177,7 +177,7 @@
 *************************************************************/
 #visual {
     background: url(../img/images/bg_visual.jpg)no-repeat center;
-    /*border: 1px solid green;*/
+    border: 1px solid #FF000000;
 }
 
 #visual>div {
