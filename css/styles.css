@@ -14,7 +14,7 @@
 
 #banner {
     background: #0E3C84;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 /* 
@@ -79,14 +79,14 @@
 *************************************************************/
 #header {
     background: #FFFFFF;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 99px;
 }
 
 #header>div {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 #header>div>h1 {
@@ -183,7 +183,7 @@
 #visual>div {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 #visual #copy {
@@ -389,7 +389,7 @@
     width: 1200px;
     margin: 0 auto;
     position: relative;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 /* >자식 (공백)자손 +형제(형) */
@@ -553,7 +553,7 @@
 #safe>div {
     width: 1120px;
     margin: 0 auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 #safe>div h2 {
@@ -747,7 +747,7 @@
 #trip>div {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: relative;
 }
 
@@ -869,7 +869,7 @@
 #sns>div {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 #sns>div>h2 {
@@ -974,7 +974,7 @@
     position: relative;
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     text-align: center;
 }
 
