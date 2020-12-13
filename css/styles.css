@@ -31,7 +31,7 @@
     vertical-align: middle;
     position: relative;
     /*기준점*/
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 .close>label {
@@ -177,7 +177,7 @@
 *************************************************************/
 #visual {
     background: url(../img/images/bg_visual.jpg)no-repeat center;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 #visual>div {
